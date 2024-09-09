@@ -3,14 +3,17 @@
 
 ## diaplan examples
 
+```xml
  <action application="set" data="fs_send_unsupported_info=true"/>
  <action application="send_info" data="X-FFCS-SZR-INFO-DATE:22"/>
+```
 
 ## lua examples
 
+```xml
 session:setVariable("fs_send_unsupported_info", "true")
 session:execute("send_info",  " aaabbb")
-
+```
 
 (This is a place-holder for lirakis to document send\_info and setting set fs\_send\_unsupported\_info. TNX. - JB)
 
