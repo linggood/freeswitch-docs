@@ -1,7 +1,20 @@
 
 # mod_dptools: send_info 
 
- 
+## diaplan example
+
+**Other Dialplan API Command Examples**
+```xml
+<action application="set" data="fs_send_unsupported_info=true"/>
+<action application="send_info" data="aaabbb"/>
+```
+## Lua example
+
+**Other Dialplan API Command Examples**
+```xml
+session:setVariable("fs_send_unsupported_info", "true")
+session:execute("uuid_send_info", session:get_uuid() .. " aaabbb")
+```
 
 (This is a place-holder for lirakis to document send\_info and setting set fs\_send\_unsupported\_info. TNX. - JB)
 
