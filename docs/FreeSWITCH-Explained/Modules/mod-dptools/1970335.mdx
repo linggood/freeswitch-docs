@@ -2,10 +2,12 @@
 # mod_dptools: send_info 
 
 ## diaplan examples
+
  <action application="set" data="fs_send_unsupported_info=true"/>
  <action application="send_info" data="X-FFCS-SZR-INFO-DATE:22"/>
 
 ## lua examples
+
 session:setVariable("fs_send_unsupported_info", "true")
 session:execute("send_info",  " aaabbb")
 
